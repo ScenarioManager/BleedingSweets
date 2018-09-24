@@ -4,7 +4,7 @@ stages:
  - package
 
 package:
-  stage: jar
+  stage: package
   script:
     - sbt assembly
   artifacts:
