@@ -1,4 +1,4 @@
-image: gradle:alpine
+image: bigtruedata/sbt
 
 stages:
  - jar
@@ -6,7 +6,7 @@ stages:
 jar:
   stage: jar
   script:
-    - ./gradlew build
+    - sbt assembly
   artifacts:
     expire_in: 1 week
     paths:
