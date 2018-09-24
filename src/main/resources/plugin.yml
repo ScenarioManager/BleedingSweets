@@ -3,3 +3,4 @@ description: Players will drop 5 gold, 1 diamond, and 1 book when they die.
 version: 1.0.0
 author: Caleb Bassham
 main: me.calebbassham.bleedingsweets.BleedingSweetsPlugin
+depend: [ScenarioManager]
