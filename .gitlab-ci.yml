@@ -1,10 +1,10 @@
 image: bigtruedata/sbt
 
 stages:
- - jar
+ - package
 
-jar:
-  stage: jar
+package:
+  stage: package
   script:
     - sbt assembly
   artifacts:
