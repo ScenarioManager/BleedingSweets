@@ -12,3 +12,7 @@ libraryDependencies += "org.spigotmc" % "spigot-api" % "1.8-R0.1-SNAPSHOT" % "pr
 libraryDependencies += "me.calebbassham" % "ScenarioManager" % "0.4.0" % "provided"
 
 assemblyJarName in assembly := "bleeding-sweets.jar"
+
+assemblyShadeRules in assembly := Seq(
+  ShadeRule.rename("scala.**" -> "me.calebbassham.bleedingsweets.scala.@1").inAll,
+)
