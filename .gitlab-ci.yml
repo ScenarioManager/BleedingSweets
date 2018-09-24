@@ -1,9 +1,9 @@
 image: bigtruedata/sbt
 
 stages:
- - jar
+ - package
 
-jar:
+package:
   stage: jar
   script:
     - sbt assembly
