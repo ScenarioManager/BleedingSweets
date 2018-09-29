@@ -6,8 +6,7 @@ import org.bukkit.plugin.java.JavaPlugin
 class BleedingSweetsPlugin extends JavaPlugin {
 
   override def onEnable(): Unit = {
-    ScenarioManagerInstance.getScenarioManager.registerScenario(new BleedingSweets(), this)
+    ScenarioManagerInstance.getScenarioManager.register(new BleedingSweets(), this)
   }
-
 
 }

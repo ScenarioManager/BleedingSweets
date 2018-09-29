@@ -1,12 +1,12 @@
 package me.calebbassham.bleedingsweets
 
-import me.calebbassham.scenariomanager.api.Scenario
+import me.calebbassham.scenariomanager.api.{Scenario, SimpleScenario}
 import org.bukkit.Material
 import org.bukkit.event.entity.PlayerDeathEvent
 import org.bukkit.event.{EventHandler, Listener}
 import org.bukkit.inventory.ItemStack
 
-class BleedingSweets extends Scenario("BleedingSweets") with Listener {
+class BleedingSweets extends SimpleScenario() with Listener {
 
   private val gold = new ItemStack(Material.GOLD_INGOT, 5)
   private val diamond = new ItemStack(Material.DIAMOND)
